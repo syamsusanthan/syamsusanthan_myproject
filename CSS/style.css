@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.home{
+    background-size: cover;
+    background-image:url(../images/bg\ home.jpg);
+}
+/* canvas link color */
+#canvaslink{
+    color: rgb(63, 63, 236);
+}
+#canvaslink:hover{
+    border: 2px solid rgb(243, 243, 248);
+    color: white;
+}
+/* canvas link color end */
+.heading{
+    color: white;
+}
+/* navbar link */
+.anchortags a{
+    text-decoration: none;
+    padding: 10px;
+    color: rgb(0, 255, 191);
+}
+.anchortags a:hover{
+    color: white;
+}
+#logbutton{
+    width: 100%;color: white; background-color: rgb(27, 49, 248);
+}
+#logbutton:hover{color: rgb(12, 12, 12);
+    background-color: rgb(15, 207, 207);
+
+}

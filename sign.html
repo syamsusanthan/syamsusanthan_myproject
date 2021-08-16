@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>KERALA TOURISM</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+</head>
+<body class="home">
+    <!-- navbar start -->
+        <!-- collapse start -->
+        <nav class="navbar fixed-top bg-dark navbar-dark">
+            <div class="container-fluid">
+              <div  class="navbar-brand container d-flex" >
+                  <img style=" border-radius: 4%; height: 65px; width: 65px;" src="images/logo.jpg" alt="">
+                  <h3 style="font-family: cursive; margin-left: 3%;" >KERALA TOURISM</h3>
+                  <div style="margin-left: 40%;" class="anchortags">
+                    <nav class="nav nav-pills">
+                        <a class="nav-item nav-link" href="index.html">Home</a>
+                        <a class="nav-item nav-link" href="explore.html">Explore</a>
+                        <a class="nav-item nav-link" href="login.html">Login</a>
+                        <a class="nav-item nav-link active" href="#">Signup</a>
+                      </nav>
+                  </div>
+              </div>
+              
+              <button  class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div style="background-color: rgba(0, 0, 0, 0.438); color: blue;" class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Kerala Tourism</h5>
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a id="canvaslink"class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a id="canvaslink"class="nav-link" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="canvaslink"class="nav-link" href="explore.html">Explore</a>
+                      </li>
+                    
+                    <li class="nav-item">
+                        <a id="canvaslink" class="nav-link" href="#">Signup</a>
+                      </li>
+                      <li class="nav-item">
+                        <a id="canvaslink" class="nav-link" href="contact.html">Contact Us</a>
+                      </li>
+                  </ul>
+                  <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-primary" type="submit">Search</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </nav>
+        <!-- collapse end-->
+     <!-- navbar end -->
+
+     <!-- signup form start -->
+     <div style="margin-top: 10%; background-color: rgba(0, 0, 0, 0.678); margin-left: 20%; margin-right: 20%;" class=" py-3 px-5">
+        <form>
+            <h2 style="color: white;"><b>Signup Form</b></h2> <p style="float: right; color: white;">Already have an account <a href="login.html"><i>Login</i> </a> </p>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label text-white">Name</label>
+              <input type="text" placeholder="Enter your full name" class="form-control" id="exampleInputEmail1" aria-describedby="namehelp">
+              
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label text-white">Adress</label>
+                <input type="text" placeholder="Enter your permenant adress" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label text-white">Email Address</label>
+                <input type="email" placeholder="Enter your email adress" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text text-white">We'll never share your email with anyone else.</div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label text-white">Mobile No.</label>
+                <input type="text" placeholder="Enter your mobile no." class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                
+              </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label text-white">Password</label>
+              <input type="password" placeholder="Enter password" class="form-control" id="exampleInputPassword1" aria-describedby="passwordhelp" >
+              <div id="passwordhelp" class="form-text text-white">Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters</div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label text-white">Conform Password</label>
+                <input type="password" placeholder="Re-enter password" class="form-control" id="exampleInputPassword1" aria-describedby="passwordhelp" >
+                
+              </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label text-white" for="exampleCheck1">I Agree The Terms&conditions</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+    </div>
+    <!-- signup form end -->
+
+    <!-- footer start -->
+  <footer style="background-color: rgba(0, 0, 0, 0.623); margin-top: 10%; padding-top: 1%; height: 70px; ">
+    <div style=" text-align: center;">
+     <img style="height: 30px; width: 30px;" src="images/fb icon.png" alt="">
+     <img style="height: 30px; width: 30px;" src="images/insta logo.jpg" alt="">
+     <img style="height: 30px; width: 30px;" src="images/G logo.png" alt="">
+    </div>
+    <p style="text-align: center; color: white;">copyright@keralatourism</p>
+  </footer>
+  <!-- footer end -->
+     
+</body>
+</html>    
