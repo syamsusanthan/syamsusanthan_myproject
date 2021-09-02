@@ -66,42 +66,42 @@
 
      <!-- signup form start -->
      <div style="margin-top: 10%; background-color: rgba(0, 0, 0, 0.678); margin-left: 20%; margin-right: 20%;" class=" py-3 px-5">
-        <form>
+        <form action="success.html" onsubmit="return validate();">
             <h2 style="color: white;"><b>Signup Form</b></h2> <p style="float: right; color: white;">Already have an account <a href="login.html"><i>Login</i> </a> </p>
             <div class="mb-3">
               <label for="exampleInputEmail1" class="form-label text-white">Name</label>
-              <input type="text" placeholder="Enter your full name" class="form-control" id="exampleInputEmail1" aria-describedby="namehelp">
-              
+              <input id="name" type="text" onkeyup="validate();" placeholder="Enter your full name" class="form-control" id="exampleInputEmail1" aria-describedby="namehelp">
+              <label id="noname" ></label>
             </div>
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label text-white">Adress</label>
-                <input type="text" placeholder="Enter your permenant adress" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                
+                <input id="adrs" type="text" onkeyup="validate();" placeholder="Enter your permenant adress" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <label id="noadrs" ></label>
               </div>
               <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label text-white">Email Address</label>
-                <input type="email" placeholder="Enter your email adress" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <input id="email" type="text" onkeyup="validate();" placeholder="Enter your email adress" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                 <div id="emailHelp" class="form-text text-white">We'll never share your email with anyone else.</div>
+                <label id="noemail" ></label>
               </div>
               <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label text-white">Mobile No.</label>
-                <input type="text" placeholder="Enter your mobile no." class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                
+                <input id="mobile" type="text" onkeyup="validate();" placeholder="Enter your mobile no." class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <label id="nomobile" ></label>
               </div>
             <div class="mb-3">
               <label for="exampleInputPassword1" class="form-label text-white">Password</label>
-              <input type="password" placeholder="Enter password" class="form-control" id="exampleInputPassword1" aria-describedby="passwordhelp" >
-              <div id="passwordhelp" class="form-text text-white">Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters</div>
+              <input id="pwd" type="password" onkeyup="validate();" placeholder="Enter password" class="form-control" id="exampleInputPassword1" aria-describedby="passwordhelp" >
+              <div id="passwordhelp" class="d-flex form-text text-white">Your password must not contain spaces, special characters <input style="margin-left: 33%;" class="my-1" type="checkbox" onclick="check()"><p class="mx-1"><i>show password</i></p></div><br>
+              <meter style="border-radius: 0px; width: 100%; height: 18px;" id="meter" max="15" min="0" value="0" high="8" low="5" optimum="9"></meter>
+              <label id="nopwd" ></label> <label id="u"></label> <label id="l"></label> <label id="n"></label>
             </div>
             <div class="mb-3">
                 <label for="exampleInputPassword1" class="form-label text-white">Conform Password</label>
-                <input type="password" placeholder="Re-enter password" class="form-control" id="exampleInputPassword1" aria-describedby="passwordhelp" >
-                
+                <input id="repwd" type="password" onkeyup="validate();" placeholder="Re-enter password" class="form-control" id="exampleInputPassword1" aria-describedby="passwordhelp" >
+                <label id="norepwd" ></label>
               </div>
-            <div class="mb-3 form-check">
-              <input type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label text-white" for="exampleCheck1">I Agree The Terms&conditions</label>
-            </div>
+           
             <button type="submit" class="btn btn-primary">Submit</button>
           </form>
     </div>
@@ -117,6 +117,7 @@
     <p style="text-align: center; color: white;">copyright@keralatourism</p>
   </footer>
   <!-- footer end -->
+  <script src="JS/sign.js"></script>
      
 </body>
 </html>    
